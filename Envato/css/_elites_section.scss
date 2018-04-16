@@ -1,0 +1,24 @@
+@import '_variables';
+@import '_common';
+
+.elites {
+    @extend %content-width-1030;
+    padding: 175px 0 54px 0;
+    position: relative;
+    .badge {
+        position: absolute;
+        top: -77px;
+        left: 0;
+    }
+    .button-default {
+        background-color: $btnColor1;
+        margin-top: 36px;
+    }
+    .wrap {
+        text-align: right;
+        width: 60%;
+        .info {
+            color: #fff;
+        }
+    }
+}

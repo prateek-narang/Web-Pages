@@ -1,0 +1,86 @@
+@import '_mixins';
+
+%content-width-1030 {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+%content-width-970 {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.form {
+    background-color: #fff;
+    .form-block {
+        @include placeholderColor(rgb(190, 190, 190));
+        color: rgb(108, 108, 108);
+        margin-bottom: 20px;
+        .input {
+            @include font(19px, 300);
+            border: 1px solid rgb(190, 190, 190);
+            border-radius: 5px;
+            color: rgb(108, 108, 108);
+            outline: none;
+            padding: 15px 10px;
+            width: 100%;
+        }
+        .input:focus {
+            border: 1px solid rgb(144, 210, 61);
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .button-default {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+.info {
+    .heading {
+        @include font(50px, 900);
+        padding-bottom: 32px;
+    }
+    .text {
+        @include font(14px, 300);
+        p {
+            padding-bottom: 20px;
+        }
+        .strong {
+            font-weight: 600;
+        }
+    }
+}
+
+.note {
+    @include font(18px, 300);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.button-default {
+    @include font(22px, 400);
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    padding: 16px 52px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}

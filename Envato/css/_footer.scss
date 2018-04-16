@@ -1,0 +1,25 @@
+@import '_common';
+
+.footer {
+    background-color: rgb(144, 210, 61);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    .wrap {
+        position: relative;
+        @extend %content-width-970;
+        .arrow-up {
+            top: 50%;
+            right: -30px;
+            position: absolute;
+        }
+        .note {
+            padding-top: 30px;
+        }
+    }
+    .social-icons {
+        .link:not(:last-of-type) img {
+            margin-right: 15px;
+        }
+    }
+}

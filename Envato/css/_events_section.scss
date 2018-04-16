@@ -1,0 +1,46 @@
+@import '_variables';
+
+.event-wrap {
+    overflow: hidden;
+}
+
+.past-events-wrapper {
+    background-color: #fff;
+    transform: skewY(-5deg);
+    transform-origin: 100% 0%;
+    .past-events {
+        margin: 0 auto;
+        width: 1170px;
+        padding: 116px 0 200px 0;
+        transform: skewY(5deg);
+        transform-origin: 0% 100%;
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+        .event-block {
+            width: 585px;
+            height: 415px;
+            &:nth-of-type(1) {
+                background-color: rgb(61, 110, 210);
+            }
+            &:nth-of-type(2) {
+                background-color: rgb(144, 210, 61);
+            }
+            &:nth-of-type(3) {
+                background-color: rgb(255, 157, 0);
+            }
+            &:nth-of-type(4) {
+                background-color: rgb(224, 101, 42);
+            }
+        }
+    }
+    .btn {
+        margin-top: 92px;
+        text-align: center;
+        .button-default {
+            background-color: $btnColor2;
+        }
+    }
+}

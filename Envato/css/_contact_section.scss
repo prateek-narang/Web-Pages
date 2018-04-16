@@ -1,0 +1,29 @@
+.contact {
+    background-color: #000;
+    background-image: url('../images/map.png');
+    padding: 65px 0;
+    .contact-us {
+        width: 970px;
+        margin: 0 auto;
+        background-color: #fff;
+        & > div {
+            width: 50%;
+        }
+    }
+    .address {
+        padding: 50px 70px;
+        text-align: center;
+        .button-default {
+            background-color: $btnColor1;
+        }
+    }
+    .form {
+        padding: 50px 70px;
+        .textarea {
+            resize: none;
+        }
+        .button-default {
+            background-color: $btnColor2;
+        }
+    }
+}

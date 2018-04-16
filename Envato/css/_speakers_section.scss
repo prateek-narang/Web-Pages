@@ -1,0 +1,51 @@
+@import '_common';
+@import '_mixins';
+
+.speakers-wrapper {
+    background-color: #fff;
+    transform: skewY(-5deg);
+    transform-origin: 100% 0%;
+    .speakers {
+        @extend %content-width-970;
+        transform: skewY(5deg);
+        transform-origin: 0% 100%;
+        padding: 145px 0 250px 0;
+    }
+    .info {
+        width: 572px;
+    }
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    .speaker-block {
+        &.active {
+            background-color: rgb(70, 187, 9);
+        }
+        &.image {
+            background: none;
+        }
+        background-color: rgb(144, 210, 61);
+        border-radius: 10px;
+        color: #fff;
+        height: 300px;
+        width: 300px;
+        padding: 30px;
+        margin-bottom: 35px;
+        .name {
+            @include font(45px, 900);
+        }
+        .title {
+            @include font(18px, 500);
+        }
+        .divider {
+            border: 2px solid;
+            width: 40%;
+        }
+        .connect {
+            margin-top: 52px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import '_variables';
+@import '_common';
+@import '_mixins';
+
+@import '_header';
+@import '_welcome_section';
+@import '_elites_section';
+@import '_speakers_section';
+@import '_sponsors_section';
+@import '_events_section';
+@import '_contact_section';
+@import '_footer';
+
+body {
+    background-color: rgb(74, 69, 75);
+    font-family: 'Roboto', 'Sans-Serif';
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

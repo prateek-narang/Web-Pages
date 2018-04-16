@@ -1,0 +1,26 @@
+@mixin font($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin placeholderProps($color) {
+    color: $color;
+    font-family: 'Roboto';
+    @include font(19px, 300);
+}
+
+@mixin placeholderColor($color) {       //non-standardized
+    ::-moz-placeholder {
+        opacity: 1;
+        @include placeholderProps($color);
+    }
+    ::-ms-input-placeholder {
+        @include placeholderProps($color);
+    }
+    :-ms-input-placeholder {
+        @include placeholderProps($color);
+    }
+    ::placeholder {
+        @include placeholderProps($color);
+    }
+}

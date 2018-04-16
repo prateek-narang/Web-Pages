@@ -1,0 +1,141 @@
+@import '_variables';
+@import '_common';
+@import '_mixins';
+
+.welcome-wrapper {
+    background-color: #fff;
+    transform: skewY(-5deg);
+    transform-origin: 100% 0%;
+    position: relative;
+    .welcome {
+        @extend %content-width-1030;
+        padding: 60px 0 264px 0;
+        transform: skewY(5deg);
+        transform-origin: 0% 100%;
+        .info {
+            color: rgb(36, 36, 36);
+        }
+    }
+    .stickers {
+        top: -155px;
+        left: 108px;
+        position: absolute;
+        transform: skewY(5deg);
+        & > img {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+        .img1 {
+            left: 0;
+        }
+        .img2 {
+            left: 132px;
+            top: -10px;
+        }
+        .img3 {
+            left: 255px;
+            top: -25px;
+        }
+        .img4 {
+            left: 391px;
+            top: -35px;
+        }
+        .img5 {
+            left: 524px;
+            top: -44px;
+        }
+    }
+    .about {
+        position: relative;
+        & > div {
+            width: 51%;
+        }
+    }
+    .text p:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+.sign-up-form {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 430px !important;
+    .form {
+        border: 1px solid rgb(219, 218, 218);
+        border-bottom: 2px solid rgb(219, 218, 218);
+        padding: 25px 20px;
+        .caption {
+            @include font(30px, 900);
+            color: rgb(37, 37, 37);
+            text-align: center;
+        }
+        .note {
+            color: rgb(108, 108, 108);
+            font-size: 15px;
+            padding: 0;
+        }
+        .button-default {
+            background-color: $btnColor1;
+            border: 1px solid rgb(190, 190, 190);
+            margin-top: 40px;
+        }
+    }
+}
+
+.highlights {
+    display: flex;
+    margin-top: 136px;
+    .highlight-block {
+        width: calc(100%/3);
+        text-align: center;
+        &:nth-of-type(2) {
+            margin: 0 60px;
+        }
+    }
+    .info > .heading {
+        font-size: 35px;
+    }
+}
+
+.schedule {
+    margin-top: 96px;
+    .table-wrap {
+        border-radius: 20px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+    .schedule-table {
+        color: #fff;
+        text-align: left;
+        width: 100%;
+        td, th {
+            padding: 24px 44px;
+        }
+    }
+    .thead {
+        @include font(30px, 900);
+        background-color: rgb(163, 204, 64);
+    }
+    .tbody {
+        @include font(22px, 400);
+        & > tr:nth-of-type(odd) {
+            background-color: rgb(55, 55, 55);
+        }
+        & > tr:nth-of-type(even) {
+            background-color: rgb(75, 77, 79);
+        }
+        img:hover {
+            cursor: pointer;
+        }
+    }
+    .align-center {
+        text-align: center;
+    }
+    .note {
+        color: rgb(36, 36, 36);
+        font-size: 14px;
+        padding: 0 100px;
+    }
+}

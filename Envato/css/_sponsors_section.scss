@@ -1,0 +1,23 @@
+@import '_variables';
+
+.sponsor-event {
+    margin: 0 auto;
+    width: 630px;
+    padding-top: 160px;
+    text-align: center;
+    .info {
+        color: #fff;
+    }
+    .sponsors {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 42px;
+        .image:last-of-type {
+            margin-top: 25px;
+        }
+    }
+    .button-default {
+        background-color: $btnColor1;
+        margin-top: 62px;
+    }
+}

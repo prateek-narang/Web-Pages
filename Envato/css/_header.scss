@@ -1,0 +1,68 @@
+@import '_common';
+@import '_mixins';
+
+.header {
+    padding: 45px 0 225px 0;
+    @extend %content-width-1030;
+}
+
+.navlist {
+    padding: 18px;
+    & > li {
+        display: inline-block;
+        & > a {
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px 14px;
+            @include font(15px, 100);
+            text-transform: uppercase;
+        }
+        .first {
+            padding-left: 0;
+        }
+        .last {
+            padding-right: 0;
+        }
+    }
+    & > li:hover{
+        & > a {
+            color: rgb(144, 210, 61);
+        }
+    }
+    .hidden-li {
+        display: none;
+    }
+}
+
+.timer {
+    @extend %content-width-970;
+    margin-top: 114px !important;
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(144, 210, 61);
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Roboto Slab';
+    white-space: nowrap;
+    padding: 20px;
+    text-transform: uppercase;
+    .timer-block {
+        text-align: center;
+        width: 25%;
+        display: inline-block;
+        &:not(:last-of-type) .value::after {
+            content: ':';
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            right: -10px;
+        }
+        .value {
+            @include font(130px, 100);
+            position: relative;
+        }
+    }
+    .unit {
+        @include font(25px, 400);
+    }
+}
