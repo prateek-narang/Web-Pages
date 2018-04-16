@@ -1,3 +1,0 @@
-1. another way of aligning hero_icons in the header
-
-2. placeholder non-standardized fix
