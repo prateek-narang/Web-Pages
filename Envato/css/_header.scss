@@ -1,13 +1,10 @@
-@import '_common';
-@import '_mixins';
-
 .header {
     padding: 45px 0 225px 0;
-    @extend %content-width-1030;
 }
 
 .navlist {
     padding: 18px;
+    padding-right: 0;
     & > li {
         display: inline-block;
         & > a {
@@ -29,16 +26,17 @@
             color: rgb(144, 210, 61);
         }
     }
-    .hidden-li {
+    .hide-toggle {
         display: none;
+        a {
+            padding-right: 0;
+        }
     }
 }
 
 .timer {
-    @extend %content-width-970;
     margin-top: 114px !important;
     display: block;
-    width: 100%;
     border: 1px solid rgb(144, 210, 61);
     border-radius: 20px;
     color: #fff;

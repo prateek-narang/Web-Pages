@@ -1,13 +1,26 @@
 @import '_mixins';
 
-%content-width-1030 {
-    width: 1030px;
+.container-primary {
+    max-width: calc((100vw * 75.4) / 100);
+    width: 100%;
     margin: 0 auto;
 }
 
-%content-width-970 {
-    width: 1030px;
+.container-secondary {
+    max-width: calc((100vw * 71) / 100);
+    width: 100%;
     margin: 0 auto;
+}
+
+.skew {
+    background-color: #fff;
+    transform: skewY(-5deg);
+    transform-origin: 100% 0%;
+}
+
+.skew-reverse {
+    transform: skewY(5deg);
+    transform-origin: 0% 100%;
 }
 
 .form {

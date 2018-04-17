@@ -11,9 +11,15 @@
 @import '_contact_section';
 @import '_footer';
 
+@import '_media_992_1199';
+@import '_media_768_991';
+@import '_media__767';
+
 body {
     background-color: rgb(74, 69, 75);
     font-family: 'Roboto', 'Sans-Serif';
+    height: 100%;
+    width: 100%;
 }
 
 a {

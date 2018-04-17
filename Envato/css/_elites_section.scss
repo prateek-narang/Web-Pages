@@ -1,8 +1,4 @@
-@import '_variables';
-@import '_common';
-
 .elites {
-    @extend %content-width-1030;
     padding: 175px 0 54px 0;
     position: relative;
     .badge {

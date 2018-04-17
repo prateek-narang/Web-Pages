@@ -3,8 +3,6 @@
     background-image: url('../images/map.png');
     padding: 65px 0;
     .contact-us {
-        width: 970px;
-        margin: 0 auto;
         background-color: #fff;
         & > div {
             width: 50%;
@@ -20,6 +18,7 @@
     .form {
         padding: 50px 70px;
         .textarea {
+            overflow: hidden;
             resize: none;
         }
         .button-default {

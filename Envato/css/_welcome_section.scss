@@ -1,17 +1,7 @@
-@import '_variables';
-@import '_common';
-@import '_mixins';
-
 .welcome-wrapper {
-    background-color: #fff;
-    transform: skewY(-5deg);
-    transform-origin: 100% 0%;
     position: relative;
     .welcome {
-        @extend %content-width-1030;
         padding: 60px 0 264px 0;
-        transform: skewY(5deg);
-        transform-origin: 0% 100%;
         .info {
             color: rgb(36, 36, 36);
         }
