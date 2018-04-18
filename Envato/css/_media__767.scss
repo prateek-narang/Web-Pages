@@ -1,7 +1,7 @@
 @media only screen and (max-width: 767px) {
     .info {
         .heading {
-            font-size: 17px;
+            font-size: 20px;
         }
         .text {
             font-size: 12px;
@@ -9,6 +9,7 @@
     }
     .form {
         .form-block {
+            @include placeholderColor(rgb(190, 190, 190), 12px);
             margin-bottom: 14px;
             .input {
                 font-size: 12px;
@@ -46,13 +47,30 @@
             width: 120px;
             height: 32px;
         }
-        .navlist {
-            padding: 5px 0;
+    }
+    .navlist.mobile-hidden {
+        display: none;
+    }
+    .navlist.desktop-hidden > li {
+        display: inline-block;
+        padding: 5px 0;
+        a {
+            padding-right: 0;
+        }
+    }
+    .navlist.desktop-hidden:hover {
+        cursor: pointer;
+        .navlist.mobile-hidden {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            right: 0;
+            z-index: 99;
+            background-color: #4A454B;
             li {
-                display: none;
-                &.hide-toggle {
-                    display: inline-block;
-                }
+                display: block;
+                padding: 8px;
             }
         }
     }
@@ -99,6 +117,9 @@
                 height: 120x;
                 width: 120px;
             }
+        }
+        .info > .heading {
+            font-size: 26px;
         }
     }
     .schedule {
@@ -213,7 +234,7 @@
             }
         }
         .btn {
-            margin-top: 20px;
+            margin-top: 40px;
         }
     }
 
@@ -224,8 +245,11 @@
             float: none;
             width: 100%;
         }
-        .address, .form {
+        .address {
             padding: 20px;
+        } 
+        .form {
+            padding: 20px 40px;
         }
     }
 

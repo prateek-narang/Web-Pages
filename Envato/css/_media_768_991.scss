@@ -1,26 +1,34 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     // ------- header section  -----------
     .header {
+        position: relative;
         padding: 45px 0;
     }
     .nav {
-        .navlist {
-            display: flex;
-            justify-content: space-between;
-            & > li > a {
-                font-weight: 400;
-            }
-        }
         & > div {
             float: none;
         }
     }
+    .navlist.mobile-hidden {
+        display: flex;
+        justify-content: space-between;
+    }
     .timer {
+        width: 50%;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
         .value {
-            font-size: 80px;
+            font-size: 40px;
         }
         .unit {
-            font-size: 22px;
+            font-size: 12px;
+        }
+        .timer-block:not(:last-of-type) .value::after {
+            right: -5px;
         }
     }
 
@@ -178,13 +186,15 @@
         }
     }
     .timer {
-        margin-top: 0 !important;
+        margin-top: 20px !important;
+        border-radius: 10px;
     }
     .elites .wrap {
         width: 85%;
     }
     .form {
         .form-block {
+            @include placeholderColor(rgb(190, 190, 190), 16px);
             margin-bottom: 10px;
             .input {
                 font-size: 16px;

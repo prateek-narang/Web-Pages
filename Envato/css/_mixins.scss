@@ -3,24 +3,24 @@
     font-weight: $weight;
 }
 
-@mixin placeholderProps($color) {
+@mixin placeholderProps($color, $size) {
     color: $color;
     font-family: 'Roboto';
-    @include font(19px, 300);
+    @include font($size, 300);
 }
 
-@mixin placeholderColor($color) {       //non-standardized
+@mixin placeholderColor($color, $size) {       //non-standardized
     ::-moz-placeholder {
         opacity: 1;
-        @include placeholderProps($color);
+        @include placeholderProps($color, $size);
     }
     ::-ms-input-placeholder {
-        @include placeholderProps($color);
+        @include placeholderProps($color, $size);
     }
     :-ms-input-placeholder {
-        @include placeholderProps($color);
+        @include placeholderProps($color, $size);
     }
     ::placeholder {
-        @include placeholderProps($color);
+        @include placeholderProps($color, $size);
     }
 }

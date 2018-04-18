@@ -6,7 +6,8 @@
     margin-bottom: 30px;
 }
 
-.navlist {
+.navlist.mobile-hidden {
+    display: inline-block;
     padding: 18px 0;
     & > li {
         display: inline-block;
@@ -17,9 +18,6 @@
             @include font(15px, 100);
             text-transform: uppercase;
         }
-        .first {
-            padding-left: 0;
-        }
         .last {
             padding-right: 0;
         }
@@ -29,11 +27,13 @@
             color: rgb(144, 210, 61);
         }
     }
-    .hide-toggle {
-        display: none;
-        a {
-            padding-right: 0;
-        }
+}
+
+.navlist.desktop-hidden > li {
+    display: none;
+    a {
+        color: #fff;
+        padding-right: 0;
     }
 }
 
