@@ -1,3 +1,248 @@
 @media only screen and (max-width: 767px) {
+    .info {
+        .heading {
+            font-size: 17px;
+        }
+        .text {
+            font-size: 12px;
+        }
+    }
+    .form {
+        .form-block {
+            margin-bottom: 14px;
+            .input {
+                font-size: 12px;
+                padding: 6px;
+            }
+        }
+    }
+    .note {
+        font-size: 12px;
+    }
+    .button-default {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
 
+    // -------- header section ----------
+    .header {
+        padding: 30px 0;
+    }
+    .timer {
+        display: flex;
+        padding: 12px;
+        .value {
+            font-size: 24px;
+        }
+        .timer-block:not(:last-of-type) .value::after {
+            right: 0;
+        }
+        .unit {
+            font-size: 10px;
+        }
+    }
+    .nav {
+        .nav-logo img {
+            width: 120px;
+            height: 32px;
+        }
+        .navlist {
+            padding: 5px 0;
+            li {
+                display: none;
+                &.hide-toggle {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    // -------- welcome section ----------
+    .welcome-wrapper {
+        .welcome {
+            padding: 40px 0 80px 0;
+        }
+        .about > div {
+            float: none;
+            width: 100%;
+        }
+    }
+    .sign-up-form {
+        width: 85% !important;
+        margin: 0 auto;
+        margin-top: 40px;
+        position: static;
+        .form {
+            padding: 12px 22px;
+            .caption {
+                font-size: 16px;
+            }
+            .note {
+                font-size: 12px;
+            }
+            .button-default {
+                margin-top: 0;
+            }
+        }
+    }
+    .highlights {
+        margin-top: 40px;
+        flex-wrap: wrap;
+        .highlight-block {
+            &:nth-of-type(2) {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            margin-bottom: 20px;
+            width: 100%;
+            img {
+                height: 120x;
+                width: 120px;
+            }
+        }
+    }
+    .schedule {
+        margin-top: 40px;
+        .schedule-table {
+            th, td {
+                padding: 5px;
+            }
+        }
+        .table-wrap {
+            border-radius: 5px;
+        }
+        .thead {
+            font-size: 14px;
+        }
+        .tbody {
+            font-size: 12px;
+            img {
+                height: 14px;
+                width: 14px;
+            }
+        }
+        .note {
+            font-size: 12px;
+            padding: 0;
+        }
+    }
+
+    // -------- elites section ----------    
+    .elites {
+        padding: 80px 0 40px 0;
+        .wrap {
+            width: 100%;
+        }
+        .badge {
+            top: -35px;
+            img {
+                height: 80px;
+            }
+        }
+        .button-default {
+            margin-top: 20px;
+        }
+    }
+
+    // -------- speakers section ----------
+    .speakers-wrapper {
+        .wrap {
+            margin-top: 40px;
+        }
+        .image {
+            display: none;
+        }
+        .speakers {
+            padding: 40px 0;
+        }
+        .speaker-block {
+            &:not(:nth-of-type(3n)) {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            width: 85%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            height: 180px;
+            padding: 16px;
+            .name {
+                font-size: 22px;
+            }
+            .title {
+                font-size: 14px;
+            }
+            .divider {
+                margin: 8px 0;
+            }
+            .connect img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+        .info {
+            width: 100%;
+        }
+    }
+
+    // -------- sponsors section ----------
+    .sponsor-event {
+        padding: 40px 0;
+        width: 100%;
+        .sponsors {
+            margin-top: 20px;
+            flex-wrap: wrap;
+            .image {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+        .button-default {
+            margin-top: 20px;
+        }
+    }
+
+    // -------- events section ----------
+    .past-events-wrapper {
+        .past-events {
+            padding: 40px 0;
+            .events {
+                margin-top: 20px;
+            }
+            .event-block {
+                height: 100px;
+            }
+        }
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+    // -------- contact section ----------    
+    .contact {
+        padding: 16px 0;
+        .contact-us > div {
+            float: none;
+            width: 100%;
+        }
+        .address, .form {
+            padding: 20px;
+        }
+    }
+
+    // -------- footer section ----------
+    .footer {
+        padding: 20px 0;
+        .social-icons {
+            img {
+                height: 22px;
+                width: 22px;
+            }
+            .link:not(:last-of-type) img {
+                margin-right: 4px;
+            }
+        }
+        .arrow-up {
+            display: none;
+        }
+    }
 }

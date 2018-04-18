@@ -2,9 +2,12 @@
     padding: 45px 0 225px 0;
 }
 
+.nav .nav-logo {
+    margin-bottom: 30px;
+}
+
 .navlist {
-    padding: 18px;
-    padding-right: 0;
+    padding: 18px 0;
     & > li {
         display: inline-block;
         & > a {
@@ -35,6 +38,8 @@
 }
 
 .timer {
+    margin: 0 auto;
+    width: 94.5%;
     margin-top: 114px !important;
     display: block;
     border: 1px solid rgb(144, 210, 61);
@@ -55,10 +60,10 @@
             transform: translate(0%, -50%);
             right: -10px;
         }
-        .value {
-            @include font(130px, 100);
-            position: relative;
-        }
+    }
+    .value {
+        @include font(130px, 100);
+        position: relative;
     }
     .unit {
         @include font(25px, 400);

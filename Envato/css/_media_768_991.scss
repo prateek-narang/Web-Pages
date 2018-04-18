@@ -1,3 +1,224 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    // ------- header section  -----------//
+    // ------- header section  -----------
+    .header {
+        padding: 45px 0;
+    }
+    .nav {
+        .navlist {
+            display: flex;
+            justify-content: space-between;
+            & > li > a {
+                font-weight: 400;
+            }
+        }
+        & > div {
+            float: none;
+        }
+    }
+    .timer {
+        .value {
+            font-size: 80px;
+        }
+        .unit {
+            font-size: 22px;
+        }
+    }
+
+    // ------- welcome section  -----------
+    .welcome-wrapper {
+        .welcome {
+            padding: 60px 0 100px 0;
+        } 
+        .about {
+            .info {
+                width: 40%;
+            }
+        }
+    }
+    .sign-up-form {
+        position: static;
+        width: 48% !important;
+        .form { 
+            padding: 20px;
+            .button-default {
+                margin-top: 10px;
+            }
+            .note {
+                font-size: 14px;
+            }
+            .caption {
+                font-size: 26px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .highlights { 
+        margin-top: 80px;
+        .highlight-block {
+            & > img {
+                height: 130px;
+            }
+        }
+    }
+    .schedule {
+        .thead {
+            font-size: 22px;
+        }
+        .tbody {
+            font-size: 16px;
+            img {
+                height: 22px;
+                width: 22px;
+            }
+        }
+        .schedule-table {
+            td, th {
+                padding: 14px 12px;
+            }
+        }
+        margin-top: 80px;
+    }
+    // ------- elites section  -----------
+    .elites  {
+        padding: 100px 0 60px 0;
+        img {
+            height: 180px;
+            width: 180px;
+        }
+    }
+
+    // ------- speakers section  -----------
+    .speakers-wrapper {
+        .speakers {
+            padding: 60px 0;
+        }
+        .speaker-block {
+            height: 200px;
+            padding: 20px;
+            .name {
+                font-size: 26px;
+            }
+            .title {
+                font-size: 14px;
+            }
+            .connect {
+                margin-top: 30px;
+                img {
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+        }
+        .image img {
+            height: 160px;
+            width: 160px;
+        }
+        // .speaker-block {                
+        //     width: calc(100%/2 - 10px);
+        //     &:not(:nth-of-type(3n)) {
+        //         margin: 0;
+        //     }
+        //     &:not(:nth-of-type(2n)) {
+        //         margin: 0 20px 20px 0;
+        //     }
+        // }
+    }
+
+    // ------- sponsors section  -----------
+    .sponsor-event {
+        padding: 60px 100px;
+    }
+
+    // ------- events section  -----------
+    .past-events-wrapper {
+        .past-events {
+            padding: 60px 0;
+            .events {
+                margin-top: 40px;
+            }
+            .event-block {
+                height: 300px;
+            }
+        }
+        .btn {
+            margin-top: 60px;
+        }
+    }
+
+    // ------- contact section  -----------
+    .contact {
+        padding: 40px 0;
+        .address, .form {
+            padding: 30px;
+        }
+    }
+
+    // ------- footer section  -----------
+    .footer {
+        padding: 20px 0;
+        .social-icons {
+            img {
+                height: 30px;
+                width: 30px;
+            }
+            .link:not(:last-of-type) img {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    // @mixin placeholderProps($color) {
+    //     @include font(14px, 300);
+    // }
+    .welcome-wrapper {
+        .stickers {
+            display: none;
+        }
+    }
+    .timer {
+        margin-top: 0 !important;
+    }
+    .elites .wrap {
+        width: 85%;
+    }
+    .form {
+        .form-block {
+            margin-bottom: 10px;
+            .input {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    }
+    .button-default {
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .info {
+        .heading {
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        .text {
+            font-size: 14px;
+        }
+    }
+    .note {
+        font-size: 16px;
+    }
+    .skew {
+        transform: none;
+    }
+    .skew-reverse {
+        transform: none;
+    }
+    .container-primary {
+        max-width: 90%;
+    }
+    .container-secondary {
+        max-width: 90%;
+    }
 }

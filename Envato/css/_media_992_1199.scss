@@ -9,12 +9,6 @@
         .about > div {
             width: 45%;
         }
-        .stickers {
-            left: 5%;
-            .hide{
-                display: none;
-            }
-        }
     }
     .sign-up-form {
         width: 387px !important;
@@ -53,15 +47,24 @@
 
     // ---------- events section ----------
     .past-events-wrapper .past-events {
-        width: 820px;
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
     .container-primary {
-        max-width: calc((100vw * 90) / 100);
+        max-width: 90%;
     }
     .container-secondary {
-        max-width: calc((100vw * 90) / 100);        
+        max-width: 90%;        
+    }
+    .welcome-wrapper .stickers {
+        left: 5%;
+        .hide{
+            display: none;
+        }
+    }
+    .timer {
+        width: 100%;
     }
 }

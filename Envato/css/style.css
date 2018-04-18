@@ -1,10 +1,10 @@
 .container-primary {
-  max-width: calc((100vw * 75.4) / 100);
+  max-width: 75.4%;
   width: 100%;
   margin: 0 auto; }
 
 .container-secondary {
-  max-width: calc((100vw * 71) / 100);
+  max-width: 71%;
   width: 100%;
   margin: 0 auto; }
 
@@ -102,9 +102,11 @@
 .header {
   padding: 45px 0 225px 0; }
 
+.nav .nav-logo {
+  margin-bottom: 30px; }
+
 .navlist {
-  padding: 18px;
-  padding-right: 0; }
+  padding: 18px 0; }
   .navlist > li {
     display: inline-block; }
     .navlist > li > a {
@@ -126,6 +128,8 @@
       padding-right: 0; }
 
 .timer {
+  margin: 0 auto;
+  width: 94.5%;
   margin-top: 114px !important;
   display: block;
   border: 1px solid #90d23d;
@@ -145,10 +149,10 @@
       top: 50%;
       transform: translate(0%, -50%);
       right: -10px; }
-    .timer .timer-block .value {
-      font-size: 130px;
-      font-weight: 100;
-      position: relative; }
+  .timer .value {
+    font-size: 130px;
+    font-weight: 100;
+    position: relative; }
   .timer .unit {
     font-size: 25px;
     font-weight: 400; }
@@ -221,7 +225,7 @@
     .highlights .highlight-block:nth-of-type(2) {
       margin: 0 60px; }
   .highlights .info > .heading {
-    font-size: 35px; }
+    font-size: 30px; }
 
 .schedule {
   margin-top: 96px; }
@@ -284,8 +288,8 @@
   border-radius: 10px;
   color: #fff;
   height: 300px;
-  width: calc(100%/3 - 27px);
-  padding: 30px; }
+  padding: 30px;
+  width: calc(100%/3 - 27px); }
   .speakers-wrapper .speaker-block:not(:nth-of-type(3n)) {
     margin: 0 40px 40px 0; }
   .speakers-wrapper .speaker-block.active {
@@ -326,7 +330,7 @@
 
 .past-events-wrapper .past-events {
   margin: 0 auto;
-  width: 1170px;
+  width: 85.6%;
   padding: 116px 0 200px 0; }
   .past-events-wrapper .past-events .events {
     display: flex;
@@ -365,6 +369,7 @@
   .contact .form {
     padding: 50px 70px; }
     .contact .form .textarea {
+      font-family: 'Roboto';
       overflow: hidden;
       resize: none; }
     .contact .form .button-default {
@@ -392,10 +397,6 @@
 
   .welcome-wrapper .about > div {
     width: 45%; }
-  .welcome-wrapper .stickers {
-    left: 5%; }
-    .welcome-wrapper .stickers .hide {
-      display: none; }
 
   .sign-up-form {
     width: 387px !important; }
@@ -419,13 +420,330 @@
     padding: 80px 0 140px 0; }
 
   .past-events-wrapper .past-events {
-    width: 820px; } }
-@media screen and (max-width: 1199px) {
+    width: 90%; } }
+@media only screen and (max-width: 1199px) {
   .container-primary {
-    max-width: calc((100vw * 90) / 100); }
+    max-width: 90%; }
 
   .container-secondary {
-    max-width: calc((100vw * 90) / 100); } }
+    max-width: 90%; }
+
+  .welcome-wrapper .stickers {
+    left: 5%; }
+    .welcome-wrapper .stickers .hide {
+      display: none; }
+
+  .timer {
+    width: 100%; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    padding: 45px 0; }
+
+  .nav .navlist {
+    display: flex;
+    justify-content: space-between; }
+    .nav .navlist > li > a {
+      font-weight: 400; }
+  .nav > div {
+    float: none; }
+
+  .timer .value {
+    font-size: 80px; }
+  .timer .unit {
+    font-size: 22px; }
+
+  .welcome-wrapper .welcome {
+    padding: 60px 0 100px 0; }
+  .welcome-wrapper .about .info {
+    width: 40%; }
+
+  .sign-up-form {
+    position: static;
+    width: 48% !important; }
+    .sign-up-form .form {
+      padding: 20px; }
+      .sign-up-form .form .button-default {
+        margin-top: 10px; }
+      .sign-up-form .form .note {
+        font-size: 14px; }
+      .sign-up-form .form .caption {
+        font-size: 26px;
+        padding-bottom: 10px; }
+
+  .highlights {
+    margin-top: 80px; }
+    .highlights .highlight-block > img {
+      height: 130px; }
+
+  .schedule {
+    margin-top: 80px; }
+    .schedule .thead {
+      font-size: 22px; }
+    .schedule .tbody {
+      font-size: 16px; }
+      .schedule .tbody img {
+        height: 22px;
+        width: 22px; }
+    .schedule .schedule-table td, .schedule .schedule-table th {
+      padding: 14px 12px; }
+
+  .elites {
+    padding: 100px 0 60px 0; }
+    .elites img {
+      height: 180px;
+      width: 180px; }
+
+  .speakers-wrapper .speakers {
+    padding: 60px 0; }
+  .speakers-wrapper .speaker-block {
+    height: 200px;
+    padding: 20px; }
+    .speakers-wrapper .speaker-block .name {
+      font-size: 26px; }
+    .speakers-wrapper .speaker-block .title {
+      font-size: 14px; }
+    .speakers-wrapper .speaker-block .connect {
+      margin-top: 30px; }
+      .speakers-wrapper .speaker-block .connect img {
+        height: 22px;
+        width: 22px; }
+  .speakers-wrapper .image img {
+    height: 160px;
+    width: 160px; }
+
+  .sponsor-event {
+    padding: 60px 100px; }
+
+  .past-events-wrapper .past-events {
+    padding: 60px 0; }
+    .past-events-wrapper .past-events .events {
+      margin-top: 40px; }
+    .past-events-wrapper .past-events .event-block {
+      height: 300px; }
+  .past-events-wrapper .btn {
+    margin-top: 60px; }
+
+  .contact {
+    padding: 40px 0; }
+    .contact .address, .contact .form {
+      padding: 30px; }
+
+  .footer {
+    padding: 20px 0; }
+    .footer .social-icons img {
+      height: 30px;
+      width: 30px; }
+    .footer .social-icons .link:not(:last-of-type) img {
+      margin-right: 8px; } }
+@media only screen and (max-width: 991px) {
+  .welcome-wrapper .stickers {
+    display: none; }
+
+  .timer {
+    margin-top: 0 !important; }
+
+  .elites .wrap {
+    width: 85%; }
+
+  .form .form-block {
+    margin-bottom: 10px; }
+    .form .form-block .input {
+      font-size: 16px;
+      padding: 10px; }
+
+  .button-default {
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px; }
+
+  .info .heading {
+    font-size: 30px;
+    padding-bottom: 20px; }
+  .info .text {
+    font-size: 14px; }
+
+  .note {
+    font-size: 16px; }
+
+  .skew {
+    transform: none; }
+
+  .skew-reverse {
+    transform: none; }
+
+  .container-primary {
+    max-width: 90%; }
+
+  .container-secondary {
+    max-width: 90%; } }
+@media only screen and (max-width: 767px) {
+  .info .heading {
+    font-size: 17px; }
+  .info .text {
+    font-size: 12px; }
+
+  .form .form-block {
+    margin-bottom: 14px; }
+    .form .form-block .input {
+      font-size: 12px;
+      padding: 6px; }
+
+  .note {
+    font-size: 12px; }
+
+  .button-default {
+    font-size: 14px;
+    padding: 8px 14px; }
+
+  .header {
+    padding: 30px 0; }
+
+  .timer {
+    display: flex;
+    padding: 12px; }
+    .timer .value {
+      font-size: 24px; }
+    .timer .timer-block:not(:last-of-type) .value::after {
+      right: 0; }
+    .timer .unit {
+      font-size: 10px; }
+
+  .nav .nav-logo img {
+    width: 120px;
+    height: 32px; }
+  .nav .navlist {
+    padding: 5px 0; }
+    .nav .navlist li {
+      display: none; }
+      .nav .navlist li.hide-toggle {
+        display: inline-block; }
+
+  .welcome-wrapper .welcome {
+    padding: 40px 0 80px 0; }
+  .welcome-wrapper .about > div {
+    float: none;
+    width: 100%; }
+
+  .sign-up-form {
+    width: 85% !important;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: static; }
+    .sign-up-form .form {
+      padding: 12px 22px; }
+      .sign-up-form .form .caption {
+        font-size: 16px; }
+      .sign-up-form .form .note {
+        font-size: 12px; }
+      .sign-up-form .form .button-default {
+        margin-top: 0; }
+
+  .highlights {
+    margin-top: 40px;
+    flex-wrap: wrap; }
+    .highlights .highlight-block {
+      margin-bottom: 20px;
+      width: 100%; }
+      .highlights .highlight-block:nth-of-type(2) {
+        margin: 0;
+        margin-bottom: 20px; }
+      .highlights .highlight-block img {
+        height: 120x;
+        width: 120px; }
+
+  .schedule {
+    margin-top: 40px; }
+    .schedule .schedule-table th, .schedule .schedule-table td {
+      padding: 5px; }
+    .schedule .table-wrap {
+      border-radius: 5px; }
+    .schedule .thead {
+      font-size: 14px; }
+    .schedule .tbody {
+      font-size: 12px; }
+      .schedule .tbody img {
+        height: 14px;
+        width: 14px; }
+    .schedule .note {
+      font-size: 12px;
+      padding: 0; }
+
+  .elites {
+    padding: 80px 0 40px 0; }
+    .elites .wrap {
+      width: 100%; }
+    .elites .badge {
+      top: -35px; }
+      .elites .badge img {
+        height: 80px; }
+    .elites .button-default {
+      margin-top: 20px; }
+
+  .speakers-wrapper .wrap {
+    margin-top: 40px; }
+  .speakers-wrapper .image {
+    display: none; }
+  .speakers-wrapper .speakers {
+    padding: 40px 0; }
+  .speakers-wrapper .speaker-block {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 180px;
+    padding: 16px; }
+    .speakers-wrapper .speaker-block:not(:nth-of-type(3n)) {
+      margin: 0 auto;
+      margin-bottom: 20px; }
+    .speakers-wrapper .speaker-block .name {
+      font-size: 22px; }
+    .speakers-wrapper .speaker-block .title {
+      font-size: 14px; }
+    .speakers-wrapper .speaker-block .divider {
+      margin: 8px 0; }
+    .speakers-wrapper .speaker-block .connect img {
+      height: 20px;
+      width: 20px; }
+  .speakers-wrapper .info {
+    width: 100%; }
+
+  .sponsor-event {
+    padding: 40px 0;
+    width: 100%; }
+    .sponsor-event .sponsors {
+      margin-top: 20px;
+      flex-wrap: wrap; }
+      .sponsor-event .sponsors .image {
+        margin-bottom: 20px;
+        width: 100%; }
+    .sponsor-event .button-default {
+      margin-top: 20px; }
+
+  .past-events-wrapper .past-events {
+    padding: 40px 0; }
+    .past-events-wrapper .past-events .events {
+      margin-top: 20px; }
+    .past-events-wrapper .past-events .event-block {
+      height: 100px; }
+  .past-events-wrapper .btn {
+    margin-top: 20px; }
+
+  .contact {
+    padding: 16px 0; }
+    .contact .contact-us > div {
+      float: none;
+      width: 100%; }
+    .contact .address, .contact .form {
+      padding: 20px; }
+
+  .footer {
+    padding: 20px 0; }
+    .footer .social-icons img {
+      height: 22px;
+      width: 22px; }
+    .footer .social-icons .link:not(:last-of-type) img {
+      margin-right: 4px; }
+    .footer .arrow-up {
+      display: none; } }
 body {
   background-color: #4a454b;
   font-family: 'Roboto', 'Sans-Serif';
